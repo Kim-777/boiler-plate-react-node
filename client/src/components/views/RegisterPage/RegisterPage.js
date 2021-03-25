@@ -46,7 +46,7 @@ function RegisterPage(props) {
             .then(response => {
                 if(response.payload.success) {
                     
-
+                    
                     setTimeout(() => props.history.push('/login'), 3000);
                     
                 } else {
