@@ -1,8 +1,10 @@
 import React, {useEffect} from 'react'
 import Axios from 'axios';
-
+import { useSelector } from 'react-redux';
 
 function LandingPage(props) {
+
+    const { userData } = useSelector(({user}) => user);
 
     useEffect(() => {
 
@@ -25,9 +27,11 @@ function LandingPage(props) {
     return (
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height:'100vh', flexDirection:'column'}}>
             <h2>start</h2>
-            <button onClick={logoutHandler}>
-                logout
-            </button>
+            {userData.isAuth &&
+                <button onClick={logoutHandler}>
+                    logout
+                </button>
+            }
         </div>
     )
 }

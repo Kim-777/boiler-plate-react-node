@@ -1,5 +1,5 @@
 import Axios from 'axios';
-import {LOGIN_USER, REGISTER_USER, AUTH_USER} from './key'
+import {LOGIN_USER, REGISTER_USER, AUTH_USER} from '../constants/key'
 
 
 export function loginUser(dataToSubmit) {

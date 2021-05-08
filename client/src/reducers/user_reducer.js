@@ -1,4 +1,4 @@
-import { LOGIN_USER, REGISTER_USER, AUTH_USER } from "../_actions/key";
+import { LOGIN_USER, REGISTER_USER, AUTH_USER } from "../constants/key";
 
 
 export default function userReducer(state={}, action) {

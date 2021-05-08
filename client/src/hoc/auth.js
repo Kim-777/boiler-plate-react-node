@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, {useEffect} from 'react'
 import { useDispatch } from 'react-redux'
-import { authUser } from '../_actions/user_actions'
+import { authUser } from '../actions/user_actions'
 
 
 export default function auth (SpecificComponent, option, adminRoute= null) {
